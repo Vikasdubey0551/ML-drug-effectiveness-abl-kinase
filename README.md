@@ -1,4 +1,7 @@
 # Goal and Description
+
+![title](./images/title.png)
+
 This project deals with classifying the effectiveness of the drug based on Lipinski molecular descriptors.
 The target protein is **Tyrosine ABL kinase**. Mutations in the ABL-kinase are associated with **chronic myelogenous leukemia (CML)**. 
 This is binary classification problem, where features **(X)** are Lipinski molecular descriptors. The target vector **(y)** for 
