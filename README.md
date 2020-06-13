@@ -30,7 +30,10 @@ The bioactivity data is in the IC50 unit. Compounds having values of less than 1
 
 # Exploratory data Analysis (EDA)
 
+![Data Visualisation](./images/Pairplot.png)
+
 ![Data Visualisation](./images/title1.png)
+
 
 
 ## Statistical analysis | Mann-Whitney U Test
