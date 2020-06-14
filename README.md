@@ -7,7 +7,8 @@ The target protein is **Tyrosine ABL kinase**. Mutations in the ABL-kinase are a
 This is binary classification problem, where features **(X)** are Lipinski molecular descriptors. The target vector **(y)** for 
 classification is bioactivity of the drug, which is either `active` or `inactive`. 
 
-![ML-test](./images/title2.png)
+![Prediction](./images/drug-accuracy.png)
+
 
 # Data collection
 Data is obtained from the [ChEMBL Database](https://www.ebi.ac.uk/chembl/). The [ChEMBL Database](https://www.ebi.ac.uk/chembl/) is a database that contains curated bioactivity data of more than 2 million compounds. It is compiled from more than 76,000 documents, 1.2 million assays and the data spans 13,000 targets and 1,800 cells and 33,000 indications.
@@ -47,7 +48,10 @@ The bioactivity data is in the IC50 unit. Compounds having values of less than 1
  * Neural Networks (Multi-level Perceptron : MLP)
  * XGBoost
  
- ![ML-result](./images/title2.png)
+ ## Results 
+ 
+ ![ML2](./images/title2.png)
+ ![ML](./images/confusion_matrix.png)
  
 ## Statistical analysis | Mann-Whitney U Test
 
@@ -56,7 +60,7 @@ All of the 4 Lipinski's descriptors exhibited ***statistically significant diffe
 ![statistical-test](./images/Statistical-test.png)
 
 # Conclusion
-* All model seems to provide the great performance based on **10-fold cross validation** of the dataset. **Neural Network** achieves a highest **F1-score 0.63** in predicting of drug bioactivity , which is better metric for model evalution.
-* From the confusion matricies, decision tree has the highest success in detecting the drug non-effectiveness.
-* **Feature selection** suggests the `LogP` and `MW` are the most crucial factor for the successful prediction of drug bioactivity. 
+* All model seems to provide the decent performance based on **10-fold cross validation** of the dataset. `Gradient boosting`seems to providing the best performance.
+* **Neural Network** achieves a highest score in predicting both classes.
+* **Feature selection** suggests the `NumHDonors` and `MW` are the most crucial factor for the successful prediction of bioactivity of the drug. 
 
