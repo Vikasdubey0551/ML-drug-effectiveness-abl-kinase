@@ -7,6 +7,7 @@ The target protein is **Tyrosine ABL kinase**. Mutations in the ABL-kinase are a
 This is binary classification problem, where features **(X)** are Lipinski molecular descriptors. The target vector **(y)** for 
 classification is bioactivity of the drug, which is either `active` or `inactive`. 
 
+![ML3](./images/title2.png)
 ![Prediction](./images/drug-accuracy.png)
 
 
