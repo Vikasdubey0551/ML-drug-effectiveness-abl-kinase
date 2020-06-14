@@ -34,10 +34,26 @@ The bioactivity data is in the IC50 unit. Compounds having values of less than 1
 
 ![Data Visualisation](./images/title1.png)
 
-
-
+ # Machine-Learning Models
+ 
+ I have used 8 different machine learning classifiers to drug effectivenss classfication : 
+ * K-Nearest Neighbors (kNN)
+ * Logistic regression 
+ * Decision Tree
+ * Random Forest
+ * Gradient Boosting
+ * Support Vector Machine (SVM)
+ * Neural Networks (Multi-level Perceptron : MLP)
+ * XGBoost
+ 
 ## Statistical analysis | Mann-Whitney U Test
 
 All of the 4 Lipinski's descriptors exhibited ***statistically significant difference*** between the **actives** and **inactives**.
 
 ![statistical-test](./images/Statistical-test.png)
+
+# Conclusion
+* All model seems to provide the great performance based on **10-fold cross validation** of the dataset. **Neural Network** achieves a highest **F1-score 0.63** , which is better metric for model evalution.
+* From the confusion matricies, decision tree has the highest success in detecting the drug non-effectiveness.
+* **Feature selection** suggests the `LogP` and `MW` are the most crucial factor for the successful prediction of diabetes. 
+
