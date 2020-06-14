@@ -56,7 +56,7 @@ All of the 4 Lipinski's descriptors exhibited ***statistically significant diffe
 ![statistical-test](./images/Statistical-test.png)
 
 # Conclusion
-* All model seems to provide the great performance based on **10-fold cross validation** of the dataset. **Neural Network** achieves a highest **F1-score 0.63** , which is better metric for model evalution.
+* All model seems to provide the great performance based on **10-fold cross validation** of the dataset. **Neural Network** achieves a highest **F1-score 0.63** in predicting of drug bioactivity , which is better metric for model evalution.
 * From the confusion matricies, decision tree has the highest success in detecting the drug non-effectiveness.
-* **Feature selection** suggests the `LogP` and `MW` are the most crucial factor for the successful prediction of diabetes. 
+* **Feature selection** suggests the `LogP` and `MW` are the most crucial factor for the successful prediction of drug bioactivity. 
 
