@@ -7,6 +7,7 @@ The target protein is **Tyrosine ABL kinase**. Mutations in the ABL-kinase are a
 This is binary classification problem, where features **(X)** are Lipinski molecular descriptors. The target vector **(y)** for 
 classification is bioactivity of the drug, which is either `active` or `inactive`. 
 
+![ML-test](./images/title2.png)
 
 # Data collection
 Data is obtained from the [ChEMBL Database](https://www.ebi.ac.uk/chembl/). The [ChEMBL Database](https://www.ebi.ac.uk/chembl/) is a database that contains curated bioactivity data of more than 2 million compounds. It is compiled from more than 76,000 documents, 1.2 million assays and the data spans 13,000 targets and 1,800 cells and 33,000 indications.
@@ -45,6 +46,8 @@ The bioactivity data is in the IC50 unit. Compounds having values of less than 1
  * Support Vector Machine (SVM)
  * Neural Networks (Multi-level Perceptron : MLP)
  * XGBoost
+ 
+ ![ML-result](./images/title2.png)
  
 ## Statistical analysis | Mann-Whitney U Test
 
