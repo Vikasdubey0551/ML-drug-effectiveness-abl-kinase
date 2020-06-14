@@ -2,11 +2,12 @@
 
 ![title](./images/title.png)
 
-This project deals with classifying the effectiveness of the drug based on Lipinski molecular descriptors.
+This project deals with classifying the bioactivity of the drug based on Lipinski molecular descriptors.
 The target protein is **Tyrosine ABL kinase**. Mutations in the ABL-kinase are associated with **chronic myelogenous leukemia (CML)**. 
 This is binary classification problem, where features **(X)** are Lipinski molecular descriptors. The target vector **(y)** for 
 classification is bioactivity of the drug, which is either `active` or `inactive`. 
 
+![ML-test](./images/title2.png)
 
 # Data collection
 Data is obtained from the [ChEMBL Database](https://www.ebi.ac.uk/chembl/). The [ChEMBL Database](https://www.ebi.ac.uk/chembl/) is a database that contains curated bioactivity data of more than 2 million compounds. It is compiled from more than 76,000 documents, 1.2 million assays and the data spans 13,000 targets and 1,800 cells and 33,000 indications.
@@ -46,6 +47,8 @@ The bioactivity data is in the IC50 unit. Compounds having values of less than 1
  * Neural Networks (Multi-level Perceptron : MLP)
  * XGBoost
  
+ ![ML-result](./images/title2.png)
+ 
 ## Statistical analysis | Mann-Whitney U Test
 
 All of the 4 Lipinski's descriptors exhibited ***statistically significant difference*** between the **actives** and **inactives**.
@@ -53,7 +56,7 @@ All of the 4 Lipinski's descriptors exhibited ***statistically significant diffe
 ![statistical-test](./images/Statistical-test.png)
 
 # Conclusion
-* All model seems to provide the great performance based on **10-fold cross validation** of the dataset. **Neural Network** achieves a highest **F1-score 0.63** , which is better metric for model evalution.
+* All model seems to provide the great performance based on **10-fold cross validation** of the dataset. **Neural Network** achieves a highest **F1-score 0.63** in predicting of drug bioactivity , which is better metric for model evalution.
 * From the confusion matricies, decision tree has the highest success in detecting the drug non-effectiveness.
-* **Feature selection** suggests the `LogP` and `MW` are the most crucial factor for the successful prediction of diabetes. 
+* **Feature selection** suggests the `LogP` and `MW` are the most crucial factor for the successful prediction of drug bioactivity. 
 
